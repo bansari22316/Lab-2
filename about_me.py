@@ -108,8 +108,8 @@ def add_movie(my_info, title, genre):
     # TODO: Complete function body per Step 6
     # Create dictionary for new movie and add to movie list
     another_movie = {
-        'Movie Title' : title,
-        'Movie genre' : genre
+        'title' : title,
+        'genre' : genre
     }
     my_info['movies'].append(another_movie)
     return add_movie
@@ -121,8 +121,35 @@ def print_movie_genres(my_info):
         my_info (dict): Data structure containing information about me
     """
     # TODO: Complete function body per Step 7
-    movie_names = [movie['genre'] for movie in my_info['movies']]
-    print(', '.join(movie_names), end='.')
+    
+    for i, movie in enumerate(my_info['movies']):
+        print(movie['genre'])
+        
+     
+    
+
+    
+    
+   # movie_genre = {
+    #    'Rommantic',
+     #   'Action'
+    #},
+
+    #movie_name = {my_info['movie_genre']}
+    #print(f"I like to watch {movie_name} movies")
+    #print(', '.join(movie_genre), end='.')
+    
+  #  for movie_genre in my_info['movies']:
+   #     print(f"{movie_genre}")
+    #    print(', '.join(movie_genre), end='.')
+
+        #retrun print_movie_genres
+    
+    
+    
+    #movie_names = [movie['genres'] for movie in my_info['dict']]
+    #print(f"I like to watch {my_info['dict']}")
+    #print(', '.join(movie_names), end='.')
     
 
 def print_movie_titles(movie_list):
@@ -132,7 +159,8 @@ def print_movie_titles(movie_list):
         movie_list (list): List of favourite movies
     """
     # TODO: Complete function body per Step 8
-    movie_list = [movie['title'] for movie in movie_list['movies']]
+    movie_list = [movie['title'] for movie in movie_list]
+    print(f"Some of my favourite movies are {movie_list}")
     print(', '.join(movie_list), end='.')
 
 
