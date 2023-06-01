@@ -62,7 +62,7 @@ def print_student_name_and_id(my_info):
     # TODO: Complete function body per Step 3
     # Print sentence containing name
     # Print sentence containing student ID
-    print(f"My name is {my_info['name']} and my student id is {my_info['Student ID']}.")
+    print(f"My name is {my_info['name']}.\nMy student ID is {my_info['Student ID']}.")
     print()
     
 
